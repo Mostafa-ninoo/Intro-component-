@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    font-size: 1rem;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    line-height: calc(1em + 0.5rem);
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    height: 29.7rem;
+    width: 64rem;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container {
+    height: 20rem;
+    width: 22rem;
+}
+
+h1 {
+    color: white;
+    white-space: pre-line;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    color: white;
+    white-space: pre-line;
+    font-size: .75rem;
+    line-height: 1.3rem;
+}
+
+#second-side {
+    width: 20rem;
+    height: 22rem;
+}
+
+#free {
+    background-color: hsl(248, 32%, 49%);
+    font-size: .5rem;
+    color: white;
+    text-align: center;
+    height: 2rem;
+    padding-top: .3rem;
+    margin-bottom: 1rem;
+    border-radius: .4rem;
+    box-shadow: 2px 2px 2px #cdcdcd;
+}
+
+#free span {
+    font-weight: bolder;
+}
+
+form {
+    background-color: white;
+    border-radius: .5rem;
+    height: 18rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#submit-button {
+    font-size: .7rem;
+}
+
+#submit-button:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+#firstName,
+#lastName,
+#email,
+#password {
+    font-size: .7rem;
+    font-weight: bolder;
+    padding-left: 1rem;
+}
+
+#last-line {
+    font-size: .45rem;
+    margin-left: 1.5rem;
+    color: hsl(246, 25%, 77%);
+}
+
+#inside {
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+}
+
+#first-name-error,
+#last-name-error,
+#email-error,
+#password-error {
+    font-size: .5rem;
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+    visibility: hidden;
+    font-style: italic;
+}
+
+#first-name-error {
+    position: absolute;
+    right: 7rem;
+    top: 9.3rem;
+}
+
+#last-name-error {
+    position: absolute;
+    right: 7rem;
+    top: 12.2rem;
+}
+
+#email-error {
+    position: absolute;
+    right: 7rem;
+    top: 15.2rem;
+}
+
+#password-error {
+    position: absolute;
+    right: 7rem;
+    top: 18.2rem;
+}
+
+input {
+    position: relative;
+    border: 1px solid;
+}
+
+#first-error-image {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    right: 7rem;
+    top: 8.2rem;
+}
+
+#last-error-image {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    right: 7rem;
+    top: 11.2rem;
+}
+
+#email-error-image {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    right: 7rem;
+    top: 14.1rem;
+}
+
+#password-error-image {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    right: 7rem;
+    top: 17.1rem;
+}
+
+#first-error-image,
+#last-error-image,
+#email-error-image,
+#password-error-image {
+    visibility: hidden;
+}
+
+@media screen and (max-width:23.4375em) {
+    main {
+        height: 45em;
+        width: 23.4375em;
+        background-image: url(images/bg-intro-mobile.png);
+        flex-direction: column;
+    }
+
+    #container {
+        height: 23em;
+        width: 20em;
+
+    }
+
+    h1 {
+        margin-top: 1em;
+        font-size: 2em;
+        line-height: 1.2em;
+        margin-bottom: 1.5em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    p {
+        white-space: normal;
+        font-size: 1em;
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+    #second-side {
+        width: 15em;
+        height: 22em;
+    }
+
+    #free {
+        font-size: 1em;
+        height: 4em;
+    }
+
+    #last-line {
+        font-size: .3em;
+    }
+}
